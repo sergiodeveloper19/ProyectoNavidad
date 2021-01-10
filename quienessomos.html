@@ -50,14 +50,16 @@
         </div>
         <div class="container">
             <div class="row mt-5">
-                <div class="col-12 col-md-6"><p>
+                <div class="col-12 col-md-6">
                 <h2>¿QUIÉNES SOMOS?</h2>
+                <p class="tamaño">
                 Hecotronic nació en 2013 con mucha ilusión y ganas de aprender, nuestro fundador trabajo muy duro para
                 que nuestro taller sea lo que somos hoy día.Durante estos más de 7 años de experiencia nuestra filosofía ha sido siempre
                 dar lo mejor de nosotros mismos y
                 conseguir que el cliente este satisfecho con nuestros trabajos.
                 Nos apasiona nuestro trabajo.
-                </p></div>
+                </p>
+            </div>
                 <div class="col-12 col-md-6">
                     <div id="carouselId" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -67,13 +69,25 @@
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                               <img src="imagenes/Fachada500x500.jpg" alt="Fachada" class="img-fluid">
+                                <picture>
+                                    <source srcset="imagenes/Fachada500x500.jpg" media="(min-width:600px)">
+                                    <source srcset="imagenes/Fachada-mobile.jpg" media="(max-width:600px)">
+                                            <img src="imagenes/Fachada500x500.jpg" alt="">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                             <img src="imagenes/colocando500x500.jpg" alt="colocando antena" class="img-fluid">
+                            <picture>
+                                <source srcset="imagenes/colocando500x500.jpg" media="(min-width:600px)">
+                                <source srcset="imagenes/colocando-mobile.jpg" media="(max-width:600px)">
+                                <img src="imagenes/colocando500x500.jpg" alt="">
+                            </picture>
                             </div>
                             <div class="carousel-item">
-                                <img src="imagenes/parabolica500x500.jpg" alt="colocando parabolica" class="img-fluid">
+                                <picture>
+                                    <source srcset="imagenes/parabolica500x500.jpg" media="(min-width:600px)">
+                                    <source srcset="imagenes/parabolica-mobile.jpg" media="(max-width:600px)">
+                                    <img src="imagenes/parabolica500x500.jpg" alt="">
+                                </picture>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
@@ -88,6 +102,39 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid fondologo p-5 mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 letrasverdes">
+                        Tenemos Whatsapp para darte un mejor servicio.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 mt-3 fondogris">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-4"><h1>Reseñas</h1>
+                    </div>
+                </div>
+                <div class="row tamaño">
+                    <div class="col-12 col-md-4 mb-3 ">
+                        Calidad y capacidad de respuesta. <br><br>
+                        <b>Antonio Diaz</b> 
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        Gran profesional por lo que recomiendo encarecidamente esta empresa familiar. <br><br>
+                        <b>Pepe Rodriguez</b> 
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        Buen trato y buen servicio. <br><br>
+                        <b>Jose Perez</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
        
         
         <!--Whatsapp-->
