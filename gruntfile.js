@@ -3,6 +3,7 @@
 module.exports = function(grunt){
 
   grunt.initConfig({
+
     // WebP configuration
     cwebp: {
       static: {
@@ -15,43 +16,47 @@ module.exports = function(grunt){
         },
         files: [{
           expand: true,
-          cwd: 'imagenes/',
-          src: ['imagenes/*.{jpg,jpeg,png}'],
-          dest: 'imagenes/'
+          cwd: './',
+          src: ['./imagenes/*.{jpg,jpeg,png,webp}'],
+          dest: './imagenes/webp/'
         }]
       }
     },
 
+
     responsive_images: {
       dev: {
         options: {
+	  engine: 'im',
           sizes: [{
-            name: 'small',
-            width: 950
+            name: '320',
+            width: 320
           },{
-            name: 'medium',
-            width: 1500
+            name: '640',
+            width: 640
           },{
-            name: 'large',
+            name: '1024',
+            width: 1024
+          },{
+            name: '2000',
             width: 2000
-          },{
-            name: 'extralarge',
-            width: 2500
           }
         ]},
         files: [{
           expand: true,
-          src: ['imagenes/**/*.webp'],
-          cwd: 'imagenes/',
-          dest: 'imagenes/'
+          src: ['*.webp'],
+          cwd: 'imagenes/webp/imagenes/',
+          dest: 'imagenes/redimensionadas/'
         }]
       }
     }
   });
 
+
   grunt.loadNpmTasks('grunt-responsive-images');
   grunt.loadNpmTasks('grunt-cwebp');
-  grunt.loadNpmTasks('grunt-imagemagick');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
 
   grunt.registerTask('default',['cwebp','responsive_images']);
 }
