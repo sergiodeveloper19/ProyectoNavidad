@@ -1,6 +1,6 @@
 @media (max-width:600px){
     .texto{
-        position: absolute;
+    position: absolute;
        bottom: 50px;
        left: 50px;
        font-size: 25px;
@@ -19,9 +19,9 @@
     }
      .whatsapp {
          position: fixed;
-         width: 60px;
-         height: 60px;
-         bottom: 40px;
+         width: 45px;
+         height: 45px;
+         bottom: 300px;
          right: 40px;
          background-color: #25d366;
          color: #FFF;
@@ -70,6 +70,15 @@
           font-size: 20px;
           font-family: sans-serif;
       }
+      .texto2{
+         position: absolute;
+         bottom: 360px;
+         right: 370px;
+         color: brown;
+         font-family: fantasy;
+         font-size: 30px
+
+      }
     }
 
 
@@ -94,13 +103,13 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .tamaño{
     font-size: 25px;
 }
-
+/*Clase para google maps */
  .embed-container {
      position: relative;
      overflow: hidden;
      padding-top: 56.25%;
  }
-
+/*Clase para google maps*/
  .embed-container iframe {
      position: absolute;
      top: 0;
@@ -110,8 +119,3 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      border: 0;
  }
  
-
-
-
-
-
