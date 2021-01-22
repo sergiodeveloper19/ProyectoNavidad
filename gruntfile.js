@@ -17,13 +17,13 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: './',
-          src: ['./imagenes/*.{jpg,jpeg,png,webp}'],
+          src: ['./imagenes/redimensionadas/imagenes/*.{jpg,jpeg,png,webp}'],
           dest: './imagenes/webp/'
         }]
       }
     },
 
-
+//Responsive de imagenes
     responsive_images: {
       dev: {
         options: {
@@ -44,12 +44,14 @@ module.exports = function(grunt){
         ]},
         files: [{
           expand: true,
-          src: ['*.webp'],
-          cwd: 'imagenes/webp/imagenes/',
+          src: ['./imagenes/*.{jpg,jpeg,png,webp}'],
           dest: 'imagenes/redimensionadas/'
         }]
       }
     }
+
+
+    
   });
 
 
@@ -58,5 +60,5 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
 
-  grunt.registerTask('default',['cwebp','responsive_images']);
+  grunt.registerTask('default',['responsive_images','cwebp']);
 }

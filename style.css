@@ -3,37 +3,49 @@
     position: absolute;
        bottom: 50px;
        left: 50px;
-       font-size: 25px;
-       font-family: 'Times New Roman', Times, serif;
+       font-size: 1.5rem;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, serif;
     }
     .letra {
         font-family: "Allerta Stencil";
-        font-size: 40px;
+        font-size: 2rem;
         color:chartreuse;
         font-weight: 500;
     }
     .letramenu {
+
         font-family: fantasy;
-        font-size: 20px;
-       
+        font-size: 1.5rem;
+        
     }
      .whatsapp {
          position: fixed;
          width: 45px;
-         height: 45px;
+         height: 50px;
          bottom: 300px;
          right: 40px;
          background-color: #25d366;
          color: #FFF;
-         border-radius: 50px;
+         border-radius: 6rem;
          text-align: center;
-         font-size: 30px;
+         font-size: 2rem;
          z-index: 100;
      }
      .letratienda {
-         font-size: 15px;
+         font-size: 1rem;
          font-family: sans-serif;
      }
+       .texto2 {
+           position: relative;
+           bottom: 8rem;
+           color: brown;
+           font-family: fantasy;
+           font-size: 1rem;
+
+       }
+       .tamaño {
+           font-size: 1rem;
+       }
 
 }
 @media (min-width: 600px) {
@@ -41,16 +53,20 @@
             position: absolute;
             bottom: 600px;
             right: 200px;
+
+        }
+        .tamaño {
+            font-size: 2rem;
         }
         .letra {
             font-family: "Allerta Stencil";
-            font-size: 140px;
+            font-size: 10rem;
             color: chartreuse;
             font-weight: 500;
         }
         .letramenu {
             font-family: fantasy;
-            font-size: 25px;
+            font-size: 1.5rem;
             color: chocolate;
         }
       .whatsapp {
@@ -63,20 +79,20 @@
           color: #FFF;
           border-radius: 50px;
           text-align: center;
-          font-size: 50px;
+          font-size: 3rem;
           z-index: 100;
       }
       .letratienda {
-          font-size: 20px;
+          font-size: 1rem;
           font-family: sans-serif;
       }
-      .texto2{
-         position: absolute;
-         bottom: 360px;
-         right: 370px;
-         color: brown;
-         font-family: fantasy;
-         font-size: 30px
+      .texto2 {
+          position: absolute;
+          bottom: 340px;
+          right: 310px;
+          color: brown;
+          font-family: fantasy;
+          font-size: 2rem;
 
       }
     }
@@ -95,14 +111,6 @@ background-color: black;
     background-color: lightgray;
 }
 
-.letrasverdes{
-color: chartreuse;
-font-size: 30px;
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.tamaño{
-    font-size: 25px;
-}
 /*Clase para google maps */
  .embed-container {
      position: relative;
