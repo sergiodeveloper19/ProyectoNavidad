@@ -36,7 +36,7 @@
          font-family: sans-serif;
      }
        .texto2 {
-           position: relative;
+           position: absolute;
            bottom: 8rem;
            color: brown;
            font-family: fantasy;
@@ -51,6 +51,14 @@
             color: greenyellow;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+        .texto3 {
+            position: absolute;
+            right: 30px;
+            bottom: 1rem;
+            color: black;
+            font-family: fantasy;
+            font-size: 0.75rem;
+        }
 
 }
 @media (min-width: 600px) {
@@ -58,6 +66,7 @@
             position: absolute;
             bottom: 600px;
             right: 200px;
+            font-size: 2rem;
 
         }
         .letrasverdes{
@@ -110,6 +119,14 @@
           font-family: fantasy;
           font-size: 2rem;
 
+      }
+      .texto3{
+          position: absolute;
+          bottom: 320px;
+          right: 310px;
+          color:black;
+          font-family: fantasy;
+          font-size: 2rem;
       }
     }
 
