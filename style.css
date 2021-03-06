@@ -1,4 +1,5 @@
-@media (max-width:600px){
+/*Para movil*/
+@media (max-width:420px){
     .texto{
     position: absolute;
        bottom: 50px;
@@ -8,9 +9,9 @@
     }
     .letra {
         font-family: "Allerta Stencil";
-        font-size: 2rem;
-        color:chartreuse;
-        font-weight: 500;
+        font-size: 2.5rem;
+        color: chartreuse;
+        font-weight: 100;
     }
     .letramenu {
 
@@ -53,15 +54,126 @@
         }
         .texto3 {
             position: absolute;
-            right: 30px;
-            bottom: 1rem;
+            right: 100px;
+            bottom: 11rem;
             color: black;
-            font-family: fantasy;
-            font-size: 0.75rem;
+           font-family:Cambria,
+           Cochin,
+           Georgia,
+           Times,
+           'Times New Roman',
+           serif;
+            font-size: 1rem;
+        }
+        .textotv{
+            position: absolute;
+            right: 130px;
+            bottom: 8rem;
+            color: white;
+            font-family:Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
+            font-size: 1.25rem;
         }
 
 }
-@media (min-width: 600px) {
+/* Para tablet*/
+@media (min-width: 420px) {
+    .texto {
+        position: absolute;
+        bottom: 600px;
+        right: 200px;
+        font-size: 2rem;
+
+    }
+
+    .letrasverdes {
+        font-size: 2rem;
+        color: greenyellow;
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
+
+    }
+
+    .tamaño {
+        font-size: 4rem;
+    }
+
+    .letra {
+        font-family: "Allerta Stencil";
+        font-size: 5.5rem;
+        color: chartreuse;
+        font-weight: 100;
+    }
+
+    .letramenu {
+        font-family: fantasy;
+        font-size: 1.5rem;
+        color: chocolate;
+    }
+
+    .whatsapp {
+        position: fixed;
+        width: 80px;
+        height: 80px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 3rem;
+        z-index: 100;
+    }
+
+    .letratienda {
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+
+    .texto2 {
+        position: absolute;
+        bottom: 340px;
+        right: 310px;
+        color: brown;
+        font-family: fantasy;
+        font-size: 2rem;
+
+    }
+
+    .texto3 {
+        position: absolute;
+        bottom: 200px;
+        right: 200px;
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 2rem;
+    }
+
+    .textotv {
+        position: absolute;
+        right: 250px;
+        bottom: 200px;
+        color: white;
+        font-family: Cambria,
+            Cochin,
+            Georgia,
+            Times,
+            'Times New Roman',
+            serif;
+        font-size: 2rem;
+    }
+}
+
+/*Laptop*/
+@media (min-width: 770px) {
         .texto {
             position: absolute;
             bottom: 600px;
@@ -85,9 +197,9 @@
         }
         .letra {
             font-family: "Allerta Stencil";
-            font-size: 10rem;
+            font-size: 8rem;
             color: chartreuse;
-            font-weight: 500;
+            font-weight: 100;
         }
         .letramenu {
             font-family: fantasy;
@@ -122,11 +234,24 @@
       }
       .texto3{
           position: absolute;
-          bottom: 320px;
-          right: 310px;
+          bottom: 400px;
+          right: 450px;
           color:black;
-          font-family: fantasy;
-          font-size: 2rem;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: 4rem;
+      }
+      .textotv {
+          position: absolute;
+          right: 820px;
+          bottom: 14rem;
+          color: white;
+          font-family: Cambria,
+              Cochin,
+              Georgia,
+              Times,
+              'Times New Roman',
+              serif;
+          font-size: 4rem;
       }
     }
 
